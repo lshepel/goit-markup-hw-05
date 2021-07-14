@@ -377,6 +377,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 .social-list-link {
   display: flex;
   align-items: center;
@@ -385,7 +386,8 @@ body {
   height: 44px;
   border-radius: 50%;
   background-color: transparent;
-  transition: color 250ms var(--transition-timing-function);
+  transition: background-color 250ms var(--transition-timing-function),
+    fill 250ms var(--transition-timing-function);
 }
 
 .social-list-icon {
@@ -397,6 +399,7 @@ body {
 .social-list-link:focus {
   background-color: var(--accent-color);
 }
+
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
   fill: var(--accent-color-fifth);
@@ -431,8 +434,11 @@ body {
   letter-spacing: 0.03em;
   cursor: pointer;
   color: var(--accent-color-second);
-  transition: color 250ms var(--transition-timing-function);
+  transition: color 250ms var(--transition-timing-function),
+    background-color 250ms var(--transition-timing-function),
+    box-shadow 250ms var(--transition-timing-function);
 }
+
 .button-name:hover,
 .button-name:focus {
   background-color: var(--accent-color);
@@ -554,6 +560,7 @@ body {
   width: 170px;
   height: 92px;
 }
+
 .clients-item-list:nth-last-child(-n + 6) {
   margin-right: 0;
 }
@@ -565,17 +572,19 @@ body {
   height: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition: color 250ms var(--transition-timing-function);
+  transition: fill 250ms var(--transition-timing-function),
+    border-color 250ms var(--transition-timing-function);
 }
 .clients-list-icon {
   width: 106px;
   height: 60px;
-  fill: var(--accent-color-sixth);
+  transition: fill 250ms var(--transition-timing-function);
 }
 .clients-list-link:hover,
 .clients-list-link:focus {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
+  fill: var(--accent-color-sixth);
 }
 .clients-list-link:hover .clients-list-icon,
 .clients-list-link:focus .clients-list-icon {
@@ -680,7 +689,8 @@ body {
   height: 44px;
   border-radius: 50%;
   background-color: #46474d;
-  transition: color 250ms var(--transition-timing-function);
+  transition: background-color 250ms var(--transition-timing-function),
+    fill 250ms var(--transition-timing-function);
 }
 
 .join-list-icon {
