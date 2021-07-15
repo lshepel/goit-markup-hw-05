@@ -578,6 +578,7 @@ body {
 .clients-list-icon {
   width: 106px;
   height: 60px;
+  fill: #afb1b8;
   transition: fill 250ms var(--transition-timing-function);
 }
 .clients-list-link:hover,
